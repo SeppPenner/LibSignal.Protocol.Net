@@ -1,0 +1,54 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net46;net462;net47;net472;net48;netstandard2.0;netstandard2.1;netcoreapp2.1;netcoreapp3.1;net5.0</TargetFrameworks>
+    <AssemblyName>LibSignal.Protocol.Net</AssemblyName>
+    <RootNamespace>LibSignal.Protocol.Net</RootNamespace>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageId>LibSignal.Protocol.Net</PackageId>
+    <Authors>SeppPenner</Authors>
+    <Company>SeppPenner</Company>
+    <Copyright>Copyright © SeppPenner</Copyright>
+    <Description>LibSignal.Protocol.Net is a library to communicate with https://www.signal.org/de/. The assembly was written and tested in .Net 5.0.</Description>
+	<PackageTags>c# csharp signal chat encryption encrypted secure-chat signal-chat lib-signal</PackageTags>
+    <PackageProjectUrl>https://www.nuget.org/packages/LibSignal.Protocol.Net/</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/serilog-contrib/LibSignal.Protocol.Net</RepositoryUrl>
+    <PackageIcon>Icon.png</PackageIcon>
+    <RepositoryType>Github</RepositoryType>
+    <PackageReleaseNotes>Version 1.0.0.0 (2021-09-21): Initial commit.</PackageReleaseNotes>
+    <PackageLicenseFile>License.txt</PackageLicenseFile>
+    <LangVersion>latest</LangVersion>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="GitVersion.MsBuild" Version="5.7.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
+  </ItemGroup>
+  
+    <ItemGroup>
+    <None Include="..\..\Icon.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="..\..\License.txt">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+	<None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+	    <None Include="..\..\Changelog.md">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+</Project>
